@@ -14,7 +14,8 @@ image = "../../data/raw/img/339.jpg"
 output = "../../figures/tess_339.jpg"
 
 img = cv2.imread(image)
-
+plt.imshow(img)
+plt.show()
 custom_config = r'--oem 3 --psm 6'
 
 d = pytesseract.image_to_data(img, output_type=Output.DICT) #, config=custom_config)
@@ -56,7 +57,7 @@ df = df[df.Object != " "]
 
 print(df)
 
-#df.to_csv('test550_scratchpart2' + '.csv' ,index = False)
+df.to_csv('test550_scratchpart2' + '.csv' ,index = False)
 cv2.imwrite('test550_scratchpart2' + '.jpg', img)
 
 cv2.imwrite(output, img)
