@@ -1,0 +1,5 @@
+download data và giải nén, vứt vào folder ngoài cùng
+https://drive.google.com/drive/folders/159FT7_lrs-7jQzEKXkxdEpAK5Giide6...=sharing
+tải pytesseract cài đặt
+https://github.com/UB-Mannheim/tesseract/wiki
+chú ý sửa đường dẫn tới pytesseract tại src/pipeline/tessocr.py

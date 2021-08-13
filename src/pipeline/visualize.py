@@ -43,7 +43,6 @@ def visualize_labels(img_name, save_img = False):
     df.dropna(inplace=True)
     img = cv2.imread(image)
 
-
     for index, rows in df.iterrows():                   
             text = rows[9].upper() 
 
@@ -64,10 +63,7 @@ def visualize_labels(img_name, save_img = False):
 
 
 if __name__ == "__main__":
-    visualize_labels('619', save_img = True)
-    visualize_textboxes('619', save_img = True)
-    visualize_labels('580', save_img = True)
-    visualize_labels('395', save_img = True)
-    visualize_textboxes('580', save_img = True)
+    visualize_textboxes('999', save_img = True)
+    visualize_labels('999', save_img = True)
 
     

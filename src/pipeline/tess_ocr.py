@@ -10,12 +10,11 @@ Note: This is an example for how to create a dataframe with bounding boxes for a
 For this project, 'ready-made' bounding box is used that is found in 'data/raw/box'.
 
 """
-image = "../../data/raw/img/339.jpg"
-output = "../../figures/tess_339.jpg"
+image = "../../data/raw/img/999.jpg"
+output = "../../figures/tess_999.jpg"
 
 img = cv2.imread(image)
-plt.imshow(img)
-plt.show()
+
 custom_config = r'--oem 3 --psm 6'
 
 d = pytesseract.image_to_data(img, output_type=Output.DICT) #, config=custom_config)
